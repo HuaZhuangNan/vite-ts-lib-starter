@@ -2,6 +2,7 @@
   "name": "vite-ts-lib-starter",
   "private": true,
   "version": "0.0.1",
+  "type": "module",
   "main": "./dist/vite-ts-lib-starter.cjs",
   "module": "./dist/vite-ts-lib-starter.mjs",
   "exports": {
@@ -53,5 +54,6 @@
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
     "ts-node": "^10.7.0"
-  }
+  },
+  "engines": { "node": ">=16" }
 }

@@ -1,10 +1,12 @@
-import packageJson from "./package.json";
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-var-requires */
+const packageJson = require('./package.json');
 
 const getPackageName = () => {
   return packageJson.name;
 };
 
-export default {
+const config = {
   entries: [
     {
       filePath: "./src/index.ts",
@@ -13,3 +15,5 @@ export default {
     },
   ],
 };
+
+module.exports = config;
