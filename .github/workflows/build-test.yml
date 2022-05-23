@@ -1,5 +1,10 @@
 name: 'Build Test'
-on: [pull_request, push]
+on:
+  push:
+    branches: [main]
+  # pull_request:
+  #   # The branches below must be a subset of the branches above
+  #   branches: [main]
 
 jobs:
   build:
@@ -10,4 +15,4 @@ jobs:
       - run: |
           yarn
       - run: |
-          yarn build
+          pnpmbuild

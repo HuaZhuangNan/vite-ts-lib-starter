@@ -1,6 +1,7 @@
 import path from "path";
 import { defineConfig } from "vite";
 import packageJson from "./package.json";
+import dts from 'vite-plugin-dts';
 
 const getPackageName = () => {
   return packageJson.name;
@@ -29,5 +30,9 @@ module.exports = defineConfig({
       formats: ["es", "cjs", "iife"],
       fileName: (format) => fileName[format],
     },
+  },
+  plugins: [dts()],
+  test: {
+    globals: true,
   },
 });
