@@ -4,6 +4,9 @@
   "version": "0.0.1",
   "main": "./dist/vite-ts-lib-starter.cjs",
   "module": "./dist/vite-ts-lib-starter.mjs",
+  "keywords": [
+    "starter"
+  ],
   "exports": {
     ".": {
       "require": "./dist/vite-ts-lib-starter.cjs",

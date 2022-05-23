@@ -32,7 +32,8 @@ export default defineConfig({
     },
   },
   plugins: [dts()],
+  /* for example, use global to avoid globals imports (describe, test, expect): */
   test: {
     globals: true,
-  },
+  }
 });
