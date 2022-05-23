@@ -21,7 +21,7 @@ const fileName = {
   iife: `${getPackageName()}.iife.js`,
 };
 
-module.exports = defineConfig({
+export default defineConfig({
   base: "./",
   build: {
     lib: {
