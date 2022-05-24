@@ -17,8 +17,8 @@
     "dev": "vite --mode dev --host",
     "preview": "vite preview --host",
     "build": "tsc && vite build",
-    "test": "vitest --mode test",
-    "test:coverage": "vitest --coverage --mode test",
+    "test": "vitest --mode test  --config ./vitest.config.ts",
+    "test:coverage": "vitest --coverage --mode test  --config ./vitest.config.ts",
     "lint:scripts": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier . --write"
@@ -57,5 +57,7 @@
     "vite-plugin-dts": "^1.1.1",
     "vitest": "^0.12.9"
   },
-  "engines": { "node": ">=16" }
+  "engines": {
+    "node": ">=16"
+  }
 }
